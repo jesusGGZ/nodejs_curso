@@ -1,7 +1,12 @@
 const http = require('http');
-
-http.createServer(function (req, res ) {
-    res.writeHead(404, {'content.type': 'text/plain'});
-    res.write('<h1>esto es un simple texto</h1>');
+const handleServer = function (req, res ) {
+    res.writeHead(200, {'content.type': 'text/html'});
+    res.write('<h1>hola mundo</h1>');
     res.end();
-}).listen(3000);
+}
+
+const server = http.createServer(handleServer);
+
+server.listen(3000, function () {
+    console.log('server on port 3000');
+});
