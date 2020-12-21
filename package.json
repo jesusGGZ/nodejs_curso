@@ -1,0 +1,27 @@
+{
+  "name": "nodejs_curso",
+  "version": "1.0.0",
+  "description": "Curso de nodejs",
+  "main": "index.js",
+  "dependencies": {
+    "colors": "^1.4.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jesusGGZ/nodejs_curso.git"
+  },
+  "keywords": [
+    "nodejs",
+    "curso"
+  ],
+  "author": "Jesus Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jesusGGZ/nodejs_curso/issues"
+  },
+  "homepage": "https://github.com/jesusGGZ/nodejs_curso#readme"
+}
