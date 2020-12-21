@@ -1,6 +1,21 @@
-const os = require('os');
-//const server = required('server');
-console.log(os.platform);
-console.log(os.release);
-console.log('free name', os.freemem);
-console.log('free name', os.totalmem);
+const fs = require('fs');
+
+fs.writeFile('./texto.txt', 'linea_uno', function (err) {
+    if (err) {
+        console.log(err);
+    }
+    console.log('Archivo creado');
+})
+
+console.log('ultima linea de codigo');
+//
+const users = query('SELECT * FROM users')
+
+query('select * FROM users', function (err, users) {
+    if (err) {
+        console.log(err);
+        if (users) {
+            
+        }
+    }    
+})
