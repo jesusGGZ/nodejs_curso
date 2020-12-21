@@ -1,8 +1,7 @@
-const fs = require('fs');
+const http = require('http');
 
-fs.readFile('./texto.txt', function (err, data) {
-    if (err) {
-        console.log(err);
-    }
-    console.log(data.toString());
-});
+http.createServer(function (req, res ) {
+    res.writeHead(200, {'content.type': 'text/plain'});
+    res.write('<h1>esto es un simple texto</h1>');
+    res.end();
+}).listen(3000);
